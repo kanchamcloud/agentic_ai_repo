@@ -1,0 +1,26 @@
+[project]
+name = "part1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "duckduckgo-search>=8.1.1",
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.2",
+    "langchain-openai>=1.6.0",
+    "langchainhub>=0.1.21",
+    "openai>=3.8.0",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "tavily-python>=0.8.1",
+]
+
+[project.scripts]
+part1 = "part1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
