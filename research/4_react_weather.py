@@ -3,7 +3,7 @@ import certifi
 import requests
 import streamlit as st
 
-import langchainhub as hub
+
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
