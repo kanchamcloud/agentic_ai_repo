@@ -17,8 +17,10 @@ os.environ["SSL_CERT_FILE"] = certifi.where()
 load_dotenv()
 
 
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+WEATHER_STACK_API = os.getenv("WEATHER_STACK_API")
+# --------------------------------------------------
 
 # ----------------------------------------------------
 # 2. Tools & Agent Initialization (Cached for performance)
